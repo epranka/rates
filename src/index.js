@@ -1,10 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
+import GitHub from './GitHub';
+import './index.css';
 import * as serviceWorker from './serviceWorker';
+import Twitter from './Twitter';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+    <>
+        <App />
+        <Twitter />
+        <GitHub />
+    </>
+    , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
